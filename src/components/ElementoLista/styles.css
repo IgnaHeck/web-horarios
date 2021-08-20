@@ -1,0 +1,13 @@
+li{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: .2rem;
+    align-items: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 80%);
+    padding: 1;
+    height: 100px;
+    background-color: darkcyan;
+}

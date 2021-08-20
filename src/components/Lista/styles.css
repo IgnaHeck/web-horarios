@@ -1,0 +1,9 @@
+ul{
+    padding: .2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    background-color:white;
+}
