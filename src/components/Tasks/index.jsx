@@ -50,6 +50,7 @@ const Tasks = () => {
                             <input className="form-input-hora" onChange={handleChangeHora} type="time" value={hora}></input>
                             Dia:
                             <select onChange={handleChangeDia}>
+                                <option>-</option>
                                 <option>Lunes</option>
                                 <option>Martes</option>
                                 <option>Miercoles</option>
