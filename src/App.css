@@ -2,10 +2,13 @@ html{
   background-color: hsl(220, 13%, 18%);
   width: 100vw;
 }
+
 .App {
   text-align: center;
   color: white;
-  
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 2rem;
 }
 
 .App-header {

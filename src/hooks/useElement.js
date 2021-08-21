@@ -3,6 +3,7 @@ import { useState } from "react"
 const useElement = () => {
     const [texto, setText] = useState('')
     const [hora, setHora] = useState('')
+    const [dia, setDia] = useState('')
     console.log(window.localStorage.getItem('elementos'))
     const [elements, setElements] = useState(() => JSON.parse(window.localStorage.getItem('elementos')) || [])
 
@@ -13,12 +14,17 @@ const useElement = () => {
     const changeHora = (nuevaHora) => {
         setHora(nuevaHora)
         console.log("Hora:",hora)}
+    
+    const changeDia = (nuevoDia) => {
+        setDia(nuevoDia)
+        console.log("Dia:",dia)}
 
-    const addElement = (hora, texto) => {
+    const addElement = (hora, dia, texto) => {
         const date = new Date()
         let elemento = {}
         elemento.id = date.getTime().toString()
         elemento.text = texto
+        elemento.dia = dia
         elemento.hora = hora
         console.log("Elementos:", elements)
         console.log(elemento)
@@ -38,12 +44,14 @@ const useElement = () => {
     return {
         changeText,
         changeHora,
+        changeDia,
         addElement,
         delElement,
         persistirElemento,
         elements,
         texto,
-        hora
+        hora,
+        dia
     }
 }
 

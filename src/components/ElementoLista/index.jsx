@@ -1,9 +1,12 @@
 import "./styles.css"
 //import RemoveButton from "../RemoveButton";
 
-const Element = ({text, value, render}) => {
+const Element = ({text, value, dia, render}) => {
     return(
-        <li >{render}<p>Materia: {text} </p> <p> Horario: {value}</p></li>
+        <li>
+            <span>{render}</span><p className="parrafo-materia" >Materia: {text} </p>
+            <p className="parrafo-horario"> Horario: {dia} {value}  hs.</p>
+        </li>
     )
 }
 
