@@ -1,0 +1,47 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.form-buttons{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.form-button{
+    width: 14.1rem;
+}
+
+.form-button-guardar{
+    width: 14.1rem;
+    margin-top: 0.2rem;
+}
+
+.form-label{
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.form-input{
+    margin-left: 1rem;
+    width: 13.6rem;
+}
+
+.form-input-hora{
+    margin-left: 1rem;
+    width: 6rem;
+    margin-right: 1rem;
+    margin-left: 2.2rem;
+}
